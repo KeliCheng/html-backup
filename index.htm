@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liebesbriefe</title>
+    <!-- Get jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script>
+        $(function(){
+
+            $("#typed").typed({
+
+                // strings: ["Here we are.^2000 \nAin't much to look at, is it?^2000 \nCame here on a "  + " night once.^1000 \nIt was actually pretty crowded.^1000 \nBut on a "  + " "  + " .^300 .^300 .^1000 \nI guess it's just you^1000 and me.^3000 \nHeh."],
+                strings: ["Tu me manques tous les jours tous les soirs^2000 \n 我把你的名字^200　栽种在一株李树下^2000 \n让枝叶伸展^200　向天空表白^2000 \n Je vais traverser la rue pour te retrouver^2000 \n 我无从诉说的爱.^300 .^300 .^1000."],
+            // stringsElement: $('#typed-strings'),
+            typeSpeed: 50,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+            $(".reset").click(function(){
+                $("#typed").typed('reset');
+            });
+
+        });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+</script>
+<link href="main.css" rel="stylesheet"/>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<style>
+    /* code for animated blinking cursor */
+    .typed-cursor{
+        opacity: 1;
+        font-weight: 100;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        -ms-animation: blink 0.7s infinite;
+        -o-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+    @-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-ms-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-o-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+</style>
+</head>
+
+<body style="background-image:url(img/p2304620570.jpg);
+background-size: 1920px 1080px;
+background-repeat: repeat;">
+<!--     <a href="http://s1060.photobucket.com/user/Liebesbrief/media/IMG_0992%202_zpsy0wcmykq.png.html" target="_blank"><img src="http://i1060.photobucket.com/albums/t442/Liebesbrief/IMG_0992%202_zpsy0wcmykq.png" border="0" alt=" photo IMG_0992 2_zpsy0wcmykq.png"/></a> -->
+<!-- <div class="wrap"> -->
+
+<div class="type-wrap">
+    <i class="fa fa-quote-left fa-3x"></i>
+    <br>
+         <!--    <div id="typed-strings">
+                <p>Typed.js is a <strong>jQuery</strong> plugin.</p>
+                <p>It <em>types</em> out sentences.</p>
+                <p>And then deletes them.</p>
+                <p>Try it out!</p>
+            </div> -->
+            <span id="typed" style="white-space:pre;"></span>
+            <br>
+            <!-- <i class="fa fa-quote-right fa-3x"></i> -->
+        </div>
+
+        <div class="links">
+            <a href="http://www.liebesbriefs.com/" target="_blank"><i class="fa fa-diamond fa-3x"></i></a>
+            <br>
+            <a href="http://www.liebesbriefs.com/"> >>Back to Liebesbriefe.>> </a>
+        </div>
+        <!-- </div> -->
+
+    </body>
+    </html>
