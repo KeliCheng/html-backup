@@ -8,6 +8,7 @@
     <script src="js/typed.js" type="text/javascript"></script>
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
     <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src='js/prefixfree.min.js'></script>
     <script>
         $(function(){
             $("#typed").typed({
@@ -37,8 +38,9 @@
 </script>
 <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-<link rel="stylesheet" href="css/main.css" >
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css">
+<!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <style>
     /* code for animated blinking cursor */
     .typed-cursor{
@@ -92,16 +94,18 @@ background-repeat: repeat;">
 
 <nav>
     <ul class="cd-primary-nav">
+
+        <li class="cd-label">△</li>
+        <section id="fa-paper-plane"><li><a href="http://www.liebesbriefs.com/fanfou/">• Fanfou</a></li></section>
+        <section id="fa-paper-plane"><li><a href="http://www.liebesbriefs.com/category/tech/">• Tech</a></li></section>
+        <section id="fa-paper-plane"><li><a href="http://shuiyun-qinghe.lofter.com" target="_blank"> • Design § Photography</a></li></section>
+        <section id="fa-paper-plane"><li><a href="http://www.liebesbriefs.com/category/diary/">• 沼泽地日志</a></li></section>
+        <section id="fa-paper-plane"><li><a href="http://www.liebesbriefs.com/category/%E6%9D%82%E8%B0%88/">• 观世界</a></li></section>
+        <section id="fa-paper-plane"><li><a href="http://www.liebesbriefs.com/%E2%96%B2/">• Triangle</a></li></section>
         <li class="cd-label">△</li>
 
-        <li><a href="http://www.liebesbriefs.com/fanfou/">Fanfou</a></li>
-        <li><a href="http://www.liebesbriefs.com/category/tech/">Tech</a></li>
-        <li><a href="http://shuiyun-qinghe.lofter.com" target="_blank"> Design § Photography</a></li>
-        <li><a href="http://www.liebesbriefs.com/category/diary/">沼泽地日志</a></li>
-        <li><a href="http://www.liebesbriefs.com/category/%E6%9D%82%E8%B0%88/">观世界</a></li>
-        <li><a href="http://www.liebesbriefs.com/%E2%96%B2/">Triangle</a></li>
 
-         <div class="links">
+        <div class="links">
             <span class= "icon"><a href="http://www.liebesbriefs.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
             <span class= "icon"><a href="http://weibo.com/shuiyunqinghe" target="_blank"><i class="fa fa-weibo fa-2x"></i></a></span>
             <span class= "icon"><a href="https://github.com/KeliCheng" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
@@ -109,15 +113,15 @@ background-repeat: repeat;">
             <span class= "icon"><a href="#0" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></span>
             <span class= "icon"><a href="#0" target="_blank"><i class="fa fa-weixin fa-2x"></i></a></span>
         </div>
-</nav>
+    </nav>
 
-<!-- <div class="wrap"> -->
-<section class="cd-intro">
+    <!-- <div class="wrap"> -->
+    <section class="cd-intro">
 
-<div class="type-wrap">
-    <i class="fa fa-quote-left fa-3x"></i>
+        <div class="type-wrap">
+            <i class="fa fa-quote-left fa-3x"></i>
 
-    <br>
+            <br>
             <span id="typed" style="white-space:pre;"></span>
             <br>
             <!-- <i class="fa fa-quote-right fa-3x"></i> -->
@@ -126,10 +130,9 @@ background-repeat: repeat;">
             <a href="http://www.liebesbriefs.com/" target="_blank"><i class="fa fa-diamond fa-3x"></i></a>
             <br>
             <a href="http://www.liebesbriefs.com/"> >>Back to Liebesbriefe.>> </a>
-            <br>
         </div>
         <!-- </div> -->
     </section>
 
-    </body>
-    </html>
+</body>
+</html>

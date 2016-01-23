@@ -300,6 +300,7 @@ html, body {
   text-transform: capitalize;
 }
 .cd-primary-nav a {
+  font-size: 14px;
   display: inline-block;
   padding: .4em 1em;
   border-radius: 0.25em;
@@ -308,7 +309,7 @@ html, body {
   transition: background 0.2s;
 }
 .no-touch .cd-primary-nav a:hover {
-  background-color: #fdfdfd;
+  /*background-color: #fdfdfd;*/
 }
 .cd-primary-nav .cd-label {
   color: #fcfcfc;
@@ -421,4 +422,33 @@ html, body {
     font-size: 20px;
     font-size: 1.25rem;
   }
+
+
+/*icon animation */
+a:hover{color:#cacdd6;}
+a:after {
+  display: inline-block;
+  font-family: 'FontAwesome';
+  color: #bbb8a9;
+}
+#fa-paper-plane a:after {
+  content: '\f1d8';
+}
+#fa-paper-plane li a:after {
+  transform: rotate(30deg) skew(-15deg);
+}
+#fa-paper-plane li a:hover:after {
+  margin-left: 1em;
+}
+#fa-paper-plane li:last-of-type a:after {
+  margin: 0;
+  transform: scale(2) rotate(0) skew(0) translateX(-2em) translateY(1em);
+  opacity: 1;
+  visibility: hidden;
+}
+#fa-paper-plane li:last-of-type a:hover:after {
+  transform: rotate(30deg) translateX(8em) translateY(-20em);
+  opacity: 0;
+  visibility: visible;
+  transition: transform 2s, opacity 1.8s, visibility .15s;
 }

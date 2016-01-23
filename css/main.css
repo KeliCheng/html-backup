@@ -21,7 +21,8 @@ a{
 	color:#666;
 }
 	a:hover{
-		color:#999;
+		/*color:#999;*/
+		color:#ffffff;
 	}
 p{
 	line-height: 2em;
