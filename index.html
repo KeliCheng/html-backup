@@ -6,11 +6,11 @@
     <!-- Get jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
     <script>
         $(function(){
-
             $("#typed").typed({
-
                 // strings: ["Here we are.^2000 \nAin't much to look at, is it?^2000 \nCame here on a "  + " night once.^1000 \nIt was actually pretty crowded.^1000 \nBut on a "  + " "  + " .^300 .^300 .^1000 \nI guess it's just you^1000 and me.^3000 \nHeh."],
                 strings: ["Tu me manques tous les jours tous les soirs^2000 \n 我把你的名字^200　栽种在一株李树下^2000 \n让枝叶伸展^200　向天空表白^2000 \n Je vais traverser la rue pour te retrouver^2000 \n 我无从诉说的爱.^300 .^300 .^1000."],
             // stringsElement: $('#typed-strings'),
@@ -35,7 +35,9 @@
     function foo(){ console.log("Callback"); }
 
 </script>
-<link href="main.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+<link rel="stylesheet" href="css/main.css" >
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <style>
     /* code for animated blinking cursor */
@@ -76,32 +78,58 @@
 </style>
 </head>
 
-<body style="background-image:url(img/p2304620570.jpg);
+<body style="background-image:url(http://www.liebesbriefs.com/wp-content/uploads/2016/01/p2304624257.jpg);
 background-size: 1920px 1080px;
 background-repeat: repeat;">
 <!--     <a href="http://s1060.photobucket.com/user/Liebesbrief/media/IMG_0992%202_zpsy0wcmykq.png.html" target="_blank"><img src="http://i1060.photobucket.com/albums/t442/Liebesbrief/IMG_0992%202_zpsy0wcmykq.png" border="0" alt=" photo IMG_0992 2_zpsy0wcmykq.png"/></a> -->
+
+<header class="cd-header">
+    <!-- <div class="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div> -->
+    <a class="cd-primary-nav-trigger" href="#0">
+        <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+    </a>
+</header>
+
+<nav>
+    <ul class="cd-primary-nav">
+        <li class="cd-label">△</li>
+
+        <li><a href="http://www.liebesbriefs.com/fanfou/">Fanfou</a></li>
+        <li><a href="http://www.liebesbriefs.com/category/tech/">Tech</a></li>
+        <li><a href="http://shuiyun-qinghe.lofter.com" target="_blank"> Design § Photography</a></li>
+        <li><a href="http://www.liebesbriefs.com/category/diary/">沼泽地日志</a></li>
+        <li><a href="http://www.liebesbriefs.com/category/%E6%9D%82%E8%B0%88/">观世界</a></li>
+        <li><a href="http://www.liebesbriefs.com/%E2%96%B2/">Triangle</a></li>
+
+         <div class="links">
+            <span class= "icon"><a href="http://www.liebesbriefs.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
+            <span class= "icon"><a href="http://weibo.com/shuiyunqinghe" target="_blank"><i class="fa fa-weibo fa-2x"></i></a></span>
+            <span class= "icon"><a href="https://github.com/KeliCheng" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
+            <span class= "icon"><a href="https://www.instagram.com/_liebesbrief_/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></span>
+            <span class= "icon"><a href="#0" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></span>
+            <span class= "icon"><a href="#0" target="_blank"><i class="fa fa-weixin fa-2x"></i></a></span>
+        </div>
+</nav>
+
 <!-- <div class="wrap"> -->
+<section class="cd-intro">
 
 <div class="type-wrap">
     <i class="fa fa-quote-left fa-3x"></i>
+
     <br>
-         <!--    <div id="typed-strings">
-                <p>Typed.js is a <strong>jQuery</strong> plugin.</p>
-                <p>It <em>types</em> out sentences.</p>
-                <p>And then deletes them.</p>
-                <p>Try it out!</p>
-            </div> -->
             <span id="typed" style="white-space:pre;"></span>
             <br>
             <!-- <i class="fa fa-quote-right fa-3x"></i> -->
         </div>
-
         <div class="links">
             <a href="http://www.liebesbriefs.com/" target="_blank"><i class="fa fa-diamond fa-3x"></i></a>
             <br>
             <a href="http://www.liebesbriefs.com/"> >>Back to Liebesbriefe.>> </a>
+            <br>
         </div>
         <!-- </div> -->
+    </section>
 
     </body>
     </html>
